@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .red{
+        color:red;
+    }
+    .green{
+        color:green;
+    }
+    </style>
+</head>
+<script src="./angular.js"></script>
+<body>
+    <div ng-app="myApp" ng-controller="myController">
+        <input type="text" ng-model="userName">
+        <span class="{{color}}">{{name}}</span><br>
+        <input type="text" ng-model="userPwd">
+        <span>{{pwd}}</span><br>
+        <button ng-click="register()">点击注册</button>
+        <button ng-click="login()">登陆</button>
+    </div>
+</body>
+<script>
+    angular.module("myApp",[]).controller("myController",["$scope",function($scope){
+        $scope.user=new Object;
+        $scope.register=function(){
+            var name1=$scope.userName;
+            var pwd=$scope.userPwd;
+            // $scope.user.push($scope.userName);
+            $scope.user[name1]= pwd;
+            for(var key in $scope.user){
+                localStorage.setItem(key, $scope.user[key]);
+            }
+        }
+         $scope.login=function(){
+            // for(var key in $scope.user){
+            // var pwd = $scope.user[key], name = key; 
+            // }
+            var pwd1=localStorage.getItem($scope.userName);
+            if($scope.userName==undefined) return $scope.userName;
+            if ($scope.userPwd == pwd1) {
+                   $scope.name="登陆成功";
+                   $scope.color="green";
+              }else{
+                  $scope.name="用户名或密码输入错误";
+                  $scope.color="red";
+           }
+         }
+    }])
+</script>
+</html>
