@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 350px;
+            height: 350px;
+            margin: 100px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        .big {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 360px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            display: none;
+        }
+
+        .mask {
+            width: 175px;
+            height: 175px;
+            background: rgba(255, 255, 0, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: move;
+            display: none;
+        }
+
+        .small {
+            position: relative;
+        }
+
+        .box img {
+            vertical-align: top;
+        }
+
+        #bigBox img {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box">
+    <div id="smallBox" class="small">
+        <img src="images/001.jpg" width="350" alt=""/>
+
+        <div id="mask" class="mask"></div>
+    </div>
+    <div id="bigBox" class="big">
+        <img src="images/0001.jpg" width="800" alt=""/>
+    </div>
+</div>
+<script>
+    var box = document.getElementById("box");
+    var smallBox = document.getElementById("smallBox");
+    var mask = document.getElementById("mask");
+    var bigBox = document.getElementById("bigBox");
+    var pic=bigBox.children[0];
+    smallBox.onmouseover = function () {
+        mask.style.display = "block";
+        bigBox.style.display = "block";
+    }
+    smallBox.onmouseout = function () {
+        mask.style.display = "none";
+        bigBox.style.display = "none";
+    }
+    smallBox.onmousemove = function () {
+        var event = event || window.event;
+        var pageX = event.pageX || event.clientX + document.documentElement.scrollLeft;
+        var pageY = event.pageY || event.clientY + document.documentElement.scrollTop;
+        var boxX = pageX - box.offsetLeft;
+        var boxY = pageY - box.offsetTop;
+        var maskX = boxX - mask.offsetWidth / 2;
+        var maskY = boxY - mask.offsetHeight / 2;
+        if(maskX<0){
+            maskX=0;
+        }
+        if(maskX>smallBox.offsetWidth-mask.offsetWidth){
+            maskX=smallBox.offsetWidth-mask.offsetWidth;
+        }
+        if(maskY<0){
+            maskY=0;
+        }
+        if(maskY>smallBox.offsetWidth-mask.offsetWidth){
+            maskY=smallBox.offsetHeight-mask.offsetHeight;
+        }
+        mask.style.left = maskX + "px";
+        mask.style.top = maskY + "px";
+        var rate=bigBox.offsetWidth/smallBox.offsetWidth;
+        var rate1=bigBox.offsetHeight/smallBox.offsetHeight;
+        pic.style.left=-maskX*rate+"px";
+        pic.style.top=-maskY*rate1+"px";
+    }
+
+</script>
+</body>
+</html>

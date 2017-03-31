@@ -1,0 +1,15 @@
+
+        //模拟从后台拿到的数据
+        var datas = [{
+            name: "传智播客",
+            url: "http://www.itcast.cn",
+            type: "IT最强培训机构"
+        }, {
+            name: "黑马程序员",
+            url: "http://www.itheima.com",
+            type: "大学生IT培训机构"
+        }, {
+            name: "传智前端学院",
+            url: "http://web.itcast.cn",
+            type: "前端的黄埔军校"
+        }];

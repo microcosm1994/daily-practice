@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .wrap {
+            width: 400px;
+            height: 400px;
+            margin: 100px auto 0;
+        }
+
+        .wrap h1 {
+            text-align: center;
+        }
+
+        .wrap div {
+            width: 400px;
+            height: 300px;
+            background: pink;
+            font-size: 30px;
+            text-align: center;
+            line-height: 300px;
+        }
+    </style>
+    <script src="../jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            //获取键盘码 设置keyCodeSpan中的文字 并且设置bgChange的背景色
+          $(document).keyup(function(e){
+              var code=e.keyCode;
+              $("#keyCodeSpan").text(code);
+              var color="";
+              switch(code){
+                  case 82:
+                      color="red";
+                      break;
+                  case 66:
+                      color="blue";
+                      break;
+                  default :
+                      color="pink";
+              }
+              $("#bgChange").css("background",color);
+
+          });
+        })
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <h1>按键改变颜色</h1>
+
+    <div id="bgChange">keyCode为：<span id="keyCodeSpan"></span></div>
+</div>
+</body>
+</html>

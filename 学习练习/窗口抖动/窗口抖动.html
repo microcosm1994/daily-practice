@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #pic {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        #btn {
+            width: 30px;
+            height: 25px;
+            position: absolute;
+            top: 373px;
+            left: 65px;
+        }
+    </style>
+</head>
+<body>
+<div id="pic">
+    <img src="1.jpg" alt=""/>
+    <span id="btn"></span>
+</div>
+<script>
+  var btn=document.getElementById("btn");
+    var pic=document.getElementById("pic");
+  var num=0;
+    btn.onclick=function(){
+      var timer=setInterval(function(){
+           var x=parseInt(Math.random()*100+1);
+           var y=parseInt(Math.random()*100+1);
+            pic.style.top=y+"px";
+            pic.style.left=x+"px";
+           num++;
+           if(num>100){
+               clearInterval(timer);
+               num=0;
+               pic.style.top="100px";
+               pic.style.left="100px";
+           }
+        },15);
+    }
+</script>
+</body>
+</html>

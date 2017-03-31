@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #box {
+            width: 29px;
+            height: 65px;
+            position: absolute;
+            top: 300px;
+            background: url(2.gif) 0 0 no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<script>
+    var box = document.getElementById("box");
+    var num=300;
+    box.onclick=function(){
+        this.style.background="url(1.gif) 0 0 no-repeat";
+       var timer=setInterval(function(){
+           num-=3;
+           box.style.top=num+"px";
+            if(num==0){
+                clearInterval(timer);
+                box.style.background="url(2.gif) 0 0 no-repeat";
+                box.onclick=function(){
+                    num=0;
+                    num+=3;
+                    box.style.top=num+"px";
+                    box.style.background="url(1.gif) 0 0 no-repeat";
+                    if(num==300){
+                        clearInterval(timer);
+                    }
+                }
+            }
+       },15);
+    }
+</script>
+</body>
+</html>

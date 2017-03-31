@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        fieldset, img, input, button {
+            border: none;
+            padding: 0;
+            margin: 0;
+            outline-style: none;
+        }
+
+        ul, ol {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #box {
+            width: 405px;
+            margin: 200px auto;
+            position: relative;
+        }
+
+        #txtSearch {
+            float: left;
+            width: 300px;
+            height: 32px;
+            padding-left: 4px;
+            border: 1px solid #b6b6b6;
+            border-right: 0;
+        }
+
+        #btnSearch {
+            float: left;
+            width: 100px;
+            height: 34px;
+            font: 400 14px/34px "microsoft yahei";
+            color: white;
+            background: #3385ff;
+            cursor: pointer;
+        }
+
+        #btnSearch:hover {
+            background: #317ef3;
+        }
+
+        #pop {
+            width: 303px;
+            border: 1px solid #ccc;
+            padding: 0px;
+            position: absolute;
+            top: 34px;
+        }
+
+        #pop ul li {
+            padding-left: 5px;
+        }
+
+        #pop ul li:hover {
+            background-color: #CCC;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <input type="text" id="txtSearch">
+    <input type="button" value="百度一下" id="btnSearch">
+</div>
+<script>
+    var datas = ["a", "abc", "abbbb", "abxxxx", "xyz", "abcdef", "abzzzz"];
+    var txt=document.getElementById("txtSearch");
+    var box=document.getElementById("box");
+    txt.onkeyup=function(){
+        var val=this.value;//设置变量，让这个变量等于这个文本框的value值，
+        var filterArr=[];//创建一个新数组，用来接收判断完成后的字符串；
+        for(var i=0;i<datas.length;i++){//遍历数组，获取每一个字符串
+            var data=datas[i];//设置一个变量，让他等于数组的每一个值，
+            if(data.indexOf(val)===0){//判断数组中的每一个值的“字符串的索引号是否为0”；
+                filterArr.push(data);//为0的话就添加到那个创建的新数组中
+            }
+        }
+        console.log(filterArr);
+        var popDiv=document.getElementById("popDiv");
+        if(popDiv){
+
+        }
+        var popDiv=document.createElement("div");//创建一个div标签
+        popDiv.id="pop";//标签的id为pop；
+        box.appendChild(popDiv);//把id为popDiv的标签结构加到id为box的结构里
+        var ul=document.createElement("ul");//创建一个ul列表标签
+        popDiv.appendChild(ul);//把ul标签添加到id为popDiv的结构里
+        for(var i=0;i<filterArr.length;i++){//遍历新数组中的所有值
+            var li=document.createElement("li");//创建一个新的li标签
+            ul.appendChild(li);//把新创建的li标签放到ul标签里边
+            li.innerText=filterArr[i];//把新数组中的值赋值给li标签
+        }
+    }
+</script>
+</body>
+</html>

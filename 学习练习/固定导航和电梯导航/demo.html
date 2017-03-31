@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style type="text/css">
+    *{ margin: 0; padding: 0; list-style: none;}
+    .content-box{
+        width: 1300px;
+        margin: 0 auto;
+    }
+    .content-box img{ width: 1300px;}
+    .search{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 50px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        box-shadow:2px 2px 5px #c00;
+        display: none;
+    }
+    .search-text{
+        width: 800px;
+        margin: 10px auto;
+    }
+    .search-text input{
+        width: 650px;
+        height: 32px;
+        border: none;
+        padding-left: 5px;
+        line-height: 32px;
+        float: left;
+    }
+    .search-text button{
+        height: 32px;
+        width: 80px;
+        border: none;
+        float: left;
+        background: #c00;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .back-top{
+        width: 40px;
+        height: 40px;
+        background: #c00;
+        position: fixed;
+        right:10px;
+        bottom:30px;
+        border-radius: 1px;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        font-size: 12px;
+        display: none;
+    }
+    ul{
+        position: fixed;
+        left: 50px;
+        top: 120px;
+        cursor: pointer;
+        display: none;
+    }
+    ul li{
+        width: 32px;
+        height: 32px;
+        background: rgba(0, 0, 0, 0.9);
+        margin-top: 10px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        color: #fff;
+        font-size: 12px;
+    }
+    ul li:hover{
+        background: #c00;
+    }
+    ul li.current{
+        background: #c00;
+    }
+</style>
+<script>
+    function scroll(){
+        return{
+                top:window.pageYOffset,
+                left:window.pageXOffset
+            }
+    }
+    window.onload = function(){
+            var searchBox = document.getElementById('search_box');
+            var back = document.getElementById('back');
+            var leftNav = document.getElementById('left_nav');
+            var navLi = leftNav.getElementsByTagName('li');
+            var darget = 0;
+            var leader = 0;
+            var darget2 = 0;
+            var leader2 = 0;
+            var timer;
+            var timer2;
+            var navNum
+            window.onscroll = function(){
+                //顶部搜索
+                if(scroll().top>170){
+                    searchBox.style.display = 'block';
+                }else{
+                    searchBox.style.display = 'none';
+                };
+
+                if(scroll().top>350){
+                    back.style.display = 'block';
+                }else{
+                    back.style.display = 'none';
+                };
+
+                //返回顶部
+                leader = scroll().top;
+                leader2 = scroll().top;
+                if(leader==darget){
+                    clearInterval(timer);
+                };
+                if(leader2==darget2){
+                    clearInterval(timer2);
+                };
+
+                //左边导航
+                if(scroll().top>900){//屏幕向下滚动900，显示左边导航
+                    leftNav.style.display = 'block';
+                }else{
+                    leftNav.style.display = 'none';
+                };
+
+                //计算对应位置的数字
+                navNum = parseInt((scroll().top -900)/447)
+
+                for(var i=0;i<navLi.length;i++){
+                    navLi[i].className = '';
+                }
+                //给对应的li加上class = 'current'
+                navLi[navNum].className = 'current';
+            };
+
+
+        //左边导航
+        for(var i=0;i<navLi.length;i++){
+            navLi[i].index = i;
+            navLi[i].onclick = function(){
+                clearInterval(timer);
+                clearInterval(timer2);
+                darget2 = 1000+447*this.index;
+                timer2 = setInterval(function(){
+                    leader2 = leader2+(darget2-leader2)/5;
+                    window.scrollTo(0,leader2)
+                },10);
+            }
+        };
+
+        //返回顶部
+        back.onclick = function(){
+            clearInterval(timer)
+            clearInterval(timer2);
+            darget = 0;
+            timer = setInterval(function(){
+                leader = leader+(darget-leader)/10;
+                window.scrollTo(0,leader)
+            },10);
+        };
+
+    };
+</script>
+<body>
+    <div class="content-box">
+        <img src="images/tmall.jpg" alt=""/>
+    </div>
+    <div class="search" id="search_box">
+        <div class="search-text">
+            <input type="text">
+            <button>搜索</button>
+        </div>
+    </div>
+    <span class="back-top" id="back">顶部</span>
+    <ul id="left_nav">
+        <li class="current">女装</li>
+        <li>美容</li>
+        <li>男装</li>
+        <li>鞋子</li>
+        <li>户外</li>
+        <li>数码</li>
+        <li>家电</li>
+        <li>母婴</li>
+        <li>食品</li>
+        <li>图书</li>
+        <li>家装</li>
+        <li>超市</li>
+    </ul>
+</body>
+</html>

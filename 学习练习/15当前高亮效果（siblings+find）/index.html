@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        li {
+            font-size: 22px;
+        }
+    </style>
+    <script src="../../JS文件/jquery-1.12.4.js"></script>
+    <script>
+        $(document).ready(function () {
+          $("#box li").mouseenter(function(){
+              $(this).css("background","red").siblings().css("background","#ffffff");
+          })
+            $("#box li").mouseleave(function(){
+                $("#box li").css("background","#ffffff");
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li>菠萝</li>
+        <li>柚子</li>
+        <li>橙子</li>
+        <li>荔枝</li>
+        <li>木瓜</li>
+        <li>榴莲</li>
+        <li>柠檬</li>
+        <li>香蕉</li>
+    </ul>
+</div>
+</body>
+</html>
