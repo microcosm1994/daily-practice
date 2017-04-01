@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: 100px auto;
+            width: 492px;
+            height: 440px;
+        }
+
+        dt, dd {
+            border: 1px solid deepskyblue;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        dt span {
+            display: inline-block;
+            width: 58px;
+            height: 46px;
+            text-align: center;
+            font: 400 16px/46px "microsoft yahei";
+            position: relative;
+        }
+
+        dd span {
+            display: inline-block;
+            width: 58px;
+            height: 46px;
+            text-align: center;
+            margin-top: 0px;
+            position: relative;
+            margin-left: 2px;
+        }
+
+        dd span i, dd span b {
+            display: inline-block;
+            width: 58px;
+            height: 22px;
+            font: 400 12px/23px "microsoft yahei";
+        }
+
+        span:hover {
+            border: 1px solid #daa520;
+        }
+
+        dd span b {
+            color: #999;
+        }
+
+        .box dl dd:nth-last-child(1) span:nth-last-child(-n+5){
+            color:#999;
+        }
+        .box dl dt span:nth-last-child(-n+2) {
+            color: red;
+        }
+        .box dl dd:nth-child(2) span:nth-child(-n+6){
+            color:#999;
+        }
+        .box dl dd:nth-child(2) span:nth-last-child(-n+1)::before{
+        content:"休";
+        font-size: 12px;
+        position: absolute;
+        left:-2px;
+        top:-2px;
+        width: 14px;
+        height: 14px;
+        background-color: red;
+        color:#fff;
+        }
+        .box dl dd:nth-child(7) span:nth-child(-n+2)::before{
+            content:"休";
+            font-size: 12px;
+            position: absolute;
+            left:-2px;
+            top:-2px;
+            width: 14px;
+            height: 14px;
+            background-color: red;
+            color:#fff;
+        }
+        .box dl dd:nth-child(6) span:nth-last-child(-n+5)::before{
+            content:"休";
+            font-size: 12px;
+            position: absolute;
+            left:-2px;
+            top:-2px;
+            width: 14px;
+            height: 14px;
+            background-color: red;
+            color:#fff;
+        }
+        .box dl dd span:nth-last-child(-n+2){
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <dl>
+        <dt>
+            <span>一</span>
+            <span>二</span>
+            <span>三</span>
+            <span>四</span>
+            <span>五</span>
+            <span>六</span>
+            <span>日</span>
+        </dt>
+        <dd>
+            <span>
+                <i>26</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>27</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>28</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>29</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>30</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>31</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>1</i>
+                <b>二十五</b>
+            </span>
+
+        </dd>
+        <dd>
+            <span>
+                <i>2</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>3</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>4</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>5</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>6</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>7</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>8</i>
+                <b>二十五</b>
+            </span>
+
+        </dd>
+        <dd>
+            <span>
+                <i>9</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>10</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>11</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>12</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>13</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>14</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>15</i>
+                <b>二十五</b>
+            </span>
+
+        </dd>
+        <dd>
+            <span>
+                <i>16</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>17</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>18</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>19</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>20</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>21</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>22</i>
+                <b>二十五</b>
+            </span>
+
+        </dd>
+        <dd>
+            <span>
+                <i>23</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>24</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>25</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>26</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>27</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>28</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>29</i>
+                <b>二十五</b>
+            </span>
+
+        </dd>
+        <dd>
+            <span>
+                <i>30</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>31</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>1</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>2</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>3</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>4</i>
+                <b>二十五</b>
+            </span>
+            <span>
+                <i>5</i>
+                <b>二十五</b>
+            </span>
+        </dd>
+    </dl>
+</div>
+</body>
+</html>

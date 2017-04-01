@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .box{
+            width: 100%;
+            height: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 0;
+        }
+        .box img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .box ul{
+            position: absolute;
+            bottom: 50px;
+            left:500px;
+            z-index: 999;
+        }
+        .box ul li{
+            display: block;
+            float: left;
+            width: 30px;
+            height: 30px;
+            background: rgba(0,0,0,0.5);
+            margin-left: 20px;
+            text-align: center;
+            font:400 14px/30px "microsoft yahei";
+            color:#FFFFFF;
+            border-radius: 50%;
+        }
+        .box ul li a{
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-size:16px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .box ul li a:hover{
+            border:2px solid #daa520;
+        }
+        .box img:nth-child(1){
+            z-index:1;
+        }
+
+        .box img:target{
+            z-index: 5;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <img src="images/bg1.jpg" id="img1" alt=""/>
+    <img src="images/bg2.jpg" id="img2" alt=""/>
+    <img src="images/bg3.jpg" id="img3" alt=""/>
+    <img src="images/bg4.jpg" id="img4" alt=""/>
+    <ul>
+        <li><a href="#img1">1</a></li>
+        <li><a href="#img2">2</a></li>
+        <li><a href="#img3">3</a></li>
+        <li><a href="#img4">4</a></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <h3>设置盒子样式</h3>
+
+    <div id="box"></div>
+    <div>
+        <p id="input1">请选择颜色<input type="button" value="red"/><input type="button" value="yellow"/><input type="button"
+                                                                                                          value="blue"/>
+        </p>
+
+        <p id="input2">请选择宽度<input type="button" value="200"/><input type="button" value="300"/><input type="button"
+                                                                                                       value="400"/></p>
+
+        <p id="input3">请选择高度<input type="button" value="200"/><input type="button" value="300"/><input type="button"
+                                                                                                       value="400"/></p>
+    </div>
+</div>
+<script>
+    //var inputs = document.getElementsByTagName("input");
+    var input1 = document.getElementById("input1").getElementsByTagName("input");
+    var input2 = document.getElementById("input2").getElementsByTagName("input");
+    var input3 = document.getElementById("input3").getElementsByTagName("input");
+    var box = document.getElementById("box");
+    function inputs(e1, e2, e3) {
+        for (var i = 0; i < e1.length; i++) {
+            var temp = e1[i].value;
+            if (temp == "red") {
+                e1[i].onclick = function () {
+                    box.style.backgroundColor = "red";
+                }
+            } else if (temp == "yellow") {
+                e1[i].onclick = function () {
+                    box.style.backgroundColor = "yellow";
+                }
+            } else if (temp == "blue") {
+                e1[i].onclick = function () {
+                    box.style.backgroundColor = "blue";
+                }
+            }
+        }
+        for (var i = 0; i < e2.length; i++) {
+            var temp = e2[i].value;
+            if (temp == "200") {
+                e2[i].onclick = function () {
+                    box.style.width = "200px";
+                }
+            } else if (temp == "300") {
+                e2[i].onclick = function () {
+                    box.style.width = "300px";
+                }
+            } else if (temp == "400") {
+                e2[i].onclick = function () {
+                    box.style.width = "400px";
+                }
+            }
+        }
+        for (var i = 0; i < e3.length; i++) {
+            var temp = e3[i].value;
+            if (temp == "200") {
+                e3[i].onclick = function () {
+                    box.style.height = "200px";
+                }
+            } else if (temp == "300") {
+                e3[i].onclick = function () {
+                    box.style.height = "300px";
+                }
+            } else if (temp == "400") {
+                e3[i].onclick = function () {
+                    box.style.height = "400px";
+                }
+            }
+        }
+    }
+    inputs(input1,input2,input3);
+
+    //    for (var i = 0; i < inputs.length; i++) {
+    //        var temp = inputs[i].value;
+    //        if (temp == "red") {
+    //            inputs[i].onclick = function () {
+    //                box.style.backgroundColor = "red";
+    //            }
+    //        } else if (temp == "yellow") {
+    //            inputs[i].onclick = function () {
+    //                box.style.backgroundColor = "yellow";
+    //            }
+    //        } else if (temp == "blue") {
+    //            inputs[i].onclick = function () {
+    //                box.style.backgroundColor = "blue";
+    //            }
+    //        }
+    //    }
+
+</script>
+</body>
+</html>
