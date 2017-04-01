@@ -1,7 +1,7 @@
 /**
  * Created by 11365 on 2016/12/30.
  */
-//¶¯»­ÒÆ¶¯·â×°
+//ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½×°
 //function animate(obj, target) {
 //    clearInterval(obj.timer);
 //    obj.timer = setInterval(function () {
@@ -18,7 +18,7 @@
 //    }, 15);
 //}
 
-//»º³å¶¯»­·â×°
+//ï¿½ï¿½ï¿½å¶¯ï¿½ï¿½ï¿½ï¿½×°
 //function animate(obj, target) {
 //    clearInterval(obj.timer);
 //    obj.timer = setInterval(function () {
@@ -32,11 +32,13 @@
 //        }
 //    }, 15)
 //}
-//»º¶¯¿ò¼Ü
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 function animate(obj, json, fn) {
     clearInterval(obj.timer);
     obj.timer = setInterval(function () {
+        //ç”¨äºåˆ¤æ–­åŠ¨ç”»æ˜¯å¦ç»“æŸ
         var flag = true;
+        //éå†ä¼ è¿›æ¥çš„jsonæ•°æ®
         for (var k in json) {
             if (k === "opacity") {
                 var leader = getStyle(obj, k) * 100;
@@ -55,10 +57,12 @@ function animate(obj, json, fn) {
                 leader = leader + step;
                 obj.style[k] = leader + "px";
             }
+            //è¿è¡Œç»“æŸ
             if (leader !== target) {
                 flag = false;
             }
         }
+        //åŠ¨ç”»è¿è¡Œæ—¶æ‰§è¡Œfnå‡½æ•°
         if (flag) {
             clearInterval(obj.timer);
             if (fn) {
