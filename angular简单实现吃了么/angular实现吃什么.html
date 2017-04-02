@@ -13,7 +13,6 @@
            }
         #con{
             width: 1250px;
-            /*height: 600px;*/
             background:#F10648;
             margin:30px auto;
             border-radius:30px;
@@ -28,7 +27,6 @@
         #nav{
             width: 100%;
             height: 50px;
-            /*background: darkblue;*/
             text-align: center;
             line-height: 50px;
             padding:30px;
@@ -125,12 +123,15 @@
     </div>
 </body>
 <script>
+//定义两个全局变量，用来接收需要全局传递的数据
 var data1,geohash;
     angular.module("app",[])
+    //添加一个自定义过滤器，用来过滤最后获取到的商品图片的src路径
     .filter("getImgUrl",function(){
         var r1=/^(.)(..)/;
         var r2=/(jpeg|png|gif|jpg)$/;
         return function(urlPart){
+            //拼接获取到的商家图片src路径
              return ' https://fuss10.elemecdn.com/' + urlPart .replace(r1, '$1/$2/') .replace(r2, '$1.$1'+'imageMogr2/thumbnail/70x70/format/webp/quality/85');
         }
     })
@@ -140,15 +141,16 @@ var data1,geohash;
                 url:"http://jklib.org/ele/cities.ashx",
                 method:"get"
             }).success(function(data){
+                //data是一个获取到的数据，把它添加到$scope对象中
                 $scope.citis={
                     alphbets:Object.keys(data),
                     city:data
                 }
+                //把数据映射到全局中
                 data1 = data;  
             })
-             console.log(data1);            
         };
-        
+        //给页面添加一个show方法
         $scope.show=function(){
             var city;
             cities=data1[$scope.alphbet];
@@ -158,29 +160,27 @@ var data1,geohash;
                 break;
                 }
             }
+            //地理哈希cdn，计算出哈希值，赋值给全局变量
               geohash=geohashObj.encode(city.latitude, city.longitude);
         };
-
+            //添加一个键盘事件，实时更新数据
         $scope.keyup=function(){
-            console.log(geohash);
-            // var geohash= geohashObj.encode(data1., 115.519627)
+            //判断输入内容是否为空，如果为空直接返回
             if(!$scope.search) return;
             $http({
+                //地址拼接中需要加一个哈希值
                 url:'http://jklib.org/ele/pois.ashx?geohash=' + geohash + '&keyword=' + $scope.search,
                 method:"get"
             }).success(function(data){
-
+                //把传回来的数据添加到$scope中，方便使用
                     $scope.position=data;
-                    console.log($scope.position); 
             })
         }
         $scope.getday=function(item){
-            console.log(item);
             $http({
                 url: 'http://jklib.org/ele/restaurants.ashx?geohash=' + item.geohash + '&longitude=' + item.longitude + '&latitude=' + item.latitude,
                 method:"get"
             }).success(function(data){
-                console.log(data);
                 $scope.commodit=data;
             })
         }
