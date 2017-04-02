@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+            *{
+        margin:0; padding:0;
+            }
+           body{
+               background:#FFBA39;
+           }
+        #con{
+            width: 1250px;
+            /*height: 600px;*/
+            background:#F10648;
+            margin:30px auto;
+            border-radius:30px;
+            text-align: center;
+            padding-top:15px;
+            padding-bottom:20px;
+        }
+        #con h1{
+            color:#fff;
+            font:400 50px/50px "microsoft yahei";
+        }
+        #nav{
+            width: 100%;
+            height: 50px;
+            /*background: darkblue;*/
+            text-align: center;
+            line-height: 50px;
+            padding:30px;
+        }
+        #nav button{
+            width: 250px;
+            height: 40px;
+            border:none;
+            border-radius:20px;
+        }
+        #nav select{
+            width: 150px;
+            height: 40px;
+            border:none;
+            border-radius:20px;
+            margin-left:30px;
+        }
+        #search{
+            width: 100%;
+            text-align: center;
+            position:relative;
+            padding-top:30px;
+            padding-bottom:30px;
+        }
+        #search input{
+            width: 800px;
+            height: 50px;
+            border:none;
+            border-radius:30px;
+        }
+        #search ul{
+            width: 60%;
+            padding:30px;
+            margin:0 auto;
+        }
+        #search ul li{
+            height: 30px;
+            line-height: 30px;
+            list-style: none;
+            cursor: pointer;
+            background:#ccc;
+            border-radius:30px;
+            margin-top:20px;
+            color:#F10648;
+        }
+        #search ul li:hover{
+            background:#fff;
+            color:#000;
+            border:none;
+        }
+        .commodit{
+            width: 20%;
+            height: 200px;
+            float:left;
+            border-radius:30px;
+            margin:20px;
+        }
+        #pa{
+            overflow:hidden;
+        }
+    </style>
+</head>
+<script src="./angular.js"></script>
+<script src="http://jklib.org/ele/cdn/encode.js"></script>
+<body ng-app="app">
+    <div ng-controller="con" id="con">
+    <h1>吃了么</h1>
+        <div id="nav">
+            <button ng-click="get()">获取地名</button>
+            <select ng-change="citis.alphbets" ng-model="alphbet" >
+                <option ng-repeat="item in citis.alphbets"  value="{{item}}">{{item}}</option>
+            </select>
+            <select ng-model="cityId" ng-change="show()">
+                <option ng-repeat="item in citis.city[alphbet]" value="{{item.id}}">{{item.name}}</option>
+            </select>
+        </div>
+        <div id="search">
+            <input type="text" ng-keyup="keyup()" ng-model="search">
+            <div>
+                <ul>
+                    <li ng-repeat="item in position" >
+                        <div ng-click="getday(item)" title="item">{{item.name}}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="pa">
+            <div ng-repeat="item in commodit"  class="commodit">
+                <h3>{{item.name}}</h3>
+                <p>{{item.phone}}</p>
+                <img ng-src="item.image_path|getImgUrl" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+var data1,geohash;
+    angular.module("app",[])
+    .filter("getImgUrl",function(){
+        var r1=/^(.)(..)/;
+        var r2=/(jpeg|png|gif|jpg)$/;
+        return function(urlPart){
+             return ' https://fuss10.elemecdn.com/' + urlPart .replace(r1, '$1/$2/') .replace(r2, '$1.$1'+'imageMogr2/thumbnail/70x70/format/webp/quality/85');
+        }
+    })
+    .controller("con",["$scope","$http",function($scope,$http){
+        $scope.get=function(){
+            $http({
+                url:"http://jklib.org/ele/cities.ashx",
+                method:"get"
+            }).success(function(data){
+                $scope.citis={
+                    alphbets:Object.keys(data),
+                    city:data
+                }
+                data1 = data;  
+            })
+             console.log(data1);            
+        };
+        
+        $scope.show=function(){
+            var city;
+            cities=data1[$scope.alphbet];
+            for(var i=0;i<cities.length;i++){
+                if(cities[i].id==$scope.cityId){
+                city=cities[i];
+                break;
+                }
+            }
+              geohash=geohashObj.encode(city.latitude, city.longitude);
+        };
+
+        $scope.keyup=function(){
+            console.log(geohash);
+            // var geohash= geohashObj.encode(data1., 115.519627)
+            if(!$scope.search) return;
+            $http({
+                url:'http://jklib.org/ele/pois.ashx?geohash=' + geohash + '&keyword=' + $scope.search,
+                method:"get"
+            }).success(function(data){
+
+                    $scope.position=data;
+                    console.log($scope.position); 
+            })
+        }
+        $scope.getday=function(item){
+            console.log(item);
+            $http({
+                url: 'http://jklib.org/ele/restaurants.ashx?geohash=' + item.geohash + '&longitude=' + item.longitude + '&latitude=' + item.latitude,
+                method:"get"
+            }).success(function(data){
+                console.log(data);
+                $scope.commodit=data;
+            })
+        }
+    }])
+</script>
+</html>
