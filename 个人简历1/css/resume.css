@@ -1,0 +1,701 @@
+body, div, h3, h4, ul, li, img, a, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.con1 {
+    width: 550px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    /*background: #000;*/
+    top: 0;
+
+}
+
+.section {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+canvas {
+    position: relative;
+    top: -600px;
+}
+
+.con1 div:nth-child(1) {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: translateY(-1000px);
+}
+
+.current .con1 div:nth-child(1) {
+
+    animation: tiao 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.con1 div:nth-child(2) {
+    position: absolute;
+    top: 312px;
+    left: 20px;
+    transform: translateX(-1500px);
+}
+
+.current .con1 div:nth-child(2) {
+
+    animation: tiao 2s ease-in 1;
+    animation-fill-mode: forwards;
+}
+
+.con1 div:nth-child(3) {
+    position: absolute;
+    top: 350px;
+    left: 102px;
+    transform: translateY(6500px);
+}
+
+.current .con1 div:nth-child(3) {
+
+    animation: tiao 2s ease-in 1;
+    animation-fill-mode: forwards;
+}
+
+.con1 div:nth-child(4), .con1 div:nth-child(5) {
+    width: 200px;
+    height: 400px;
+}
+
+.con1 div:nth-child(4) .line1 {
+    width: 1px;
+    height: 360px;
+    background: #FFC001;
+
+}
+
+.con1 div:nth-child(4) {
+    /*width: 100px;*/
+    /*height: 300px;*/
+    position: absolute;
+    top: 14px;
+    left: 120px;
+    transition: all 3s;
+    animation: tiao1 5s ease-in-out 1, tiao2 1s linear Infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    transform: translateY(-1000px);
+}
+
+.con1 div:nth-child(5) .line2 {
+    width: 1px;
+    height: 230px;
+    background: #FFC001;
+
+}
+
+.con1 div:nth-child(5) {
+    position: absolute;
+    top: 42px;
+    left: 136px;
+    animation: tiao1 5s ease-in-out 1, tiao2 1s linear Infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+
+    animation-delay: 3s;
+    transform: translateY(-1000px);
+}
+
+@keyframes tiao {
+    0% {
+        opacity: 0.3;
+        /*transform:rotateZ(38deg);*/
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes tiao1 {
+    0% {
+        opacity: 0.3;
+        transform: rotateZ(38deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotateZ(38deg);
+        opacity: 1
+    }
+}
+
+@keyframes tiao2 {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.con1 .name {
+    width: 300px;
+    height: 180px;
+    /*background: #000;*/
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    opacity: 0;
+}
+
+.con1 .name {
+    animation: tiao2 2s linear 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.con1 .name span {
+    display: inline-block;
+    color: #ffffff;
+    font: 400 48px/30px "microsoft yahei";
+    transform: rotateZ(14deg);
+    position: absolute;
+    top: 28px;
+    left: 47px;
+}
+
+.con2 {
+    width: 600px;
+    height: 100%;
+    /*background: #000;*/
+    margin: 0 auto;
+    position: relative;
+}
+
+.con2 div:nth-child(1) {
+    width: 247px;
+    height: 577px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translateY(-4500px);
+}
+
+.current .con2 div:nth-child(1) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    /*animation-delay: 3s;*/
+}
+
+.con2 div:nth-child(2) {
+    width: 72px;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translateX(-4000px);
+}
+
+.current .con2 div:nth-child(2) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 0.6s;
+}
+
+.con2 div:nth-child(3) {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    top: 345px;
+    right: 126px;
+    transform: translateX(-2000px);
+}
+
+.current .con2 div:nth-child(3) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 1s;
+}
+
+.con2 div:nth-child(4) {
+    width: 69px;
+    height: 72px;
+    position: absolute;
+    top: 332px;
+    right: 196px;
+    transform: translateX(-2000px);
+}
+
+.current .con2 div:nth-child(4) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 1.3s;
+}
+
+.con2 div:nth-child(5) {
+    width: 134px;
+    height: 40px;
+    background: #5c5c5c;
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    transform: rotateZ(-20deg) translateX(2000px);
+}
+
+.current .con2 div:nth-child(5) {
+    animation: in2 2s ease-in-out 1, in3 1s ease-in Infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-delay: 1.9s;
+}
+
+.con2 div:nth-child(6) {
+    width: 134px;
+    height: 40px;
+    background: #000;
+    color: #ffffff;
+    text-align: center;
+    font: 400 22px/40px "microsoft yahei";
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    transform: rotateZ(-20deg) translateX(2000px);
+}
+
+.current .con2 div:nth-child(6) {
+    animation: in2 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 1.3s;
+}
+
+.con2 div:nth-child(7) {
+    width: 2px;
+    height: 360px;
+    background: #000;
+    position: absolute;
+    top: -110px;
+    right: 251px;
+    transform: rotateZ(70deg) translateX(-2000px);
+}
+
+.current .con2 div:nth-child(7) {
+    animation: in4 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 1.5s;
+}
+
+.con2 div:nth-child(8) {
+    width: 2px;
+    height: 200px;
+    background: #000;
+    position: absolute;
+    top: -24px;
+    right: 156px;
+    transform: rotateZ(70deg) translateX(-2000px);
+}
+
+.current .con2 div:nth-child(8) {
+    animation: in4 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 1.9s;
+}
+
+.con2 div:nth-child(9) {
+    width: 240px;
+    height: 200px;
+    /*background: #e38d13;*/
+    position: absolute;
+    top: 171px;
+    left: 114px;
+    transform: translateX(-2000px);
+}
+
+.current .con2 div:nth-child(9) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 0.1s;
+}
+
+.current .con2 div:nth-child(9) p:nth-child(1) {
+    transform: translateX(-2000px);
+}
+
+.current .con2 div:nth-child(9) p:nth-child(1) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 1.9s;
+}
+
+.current .con2 div:nth-child(9) p:nth-child(2) {
+    transform: translateX(-2000px);
+}
+
+.current .con2 div:nth-child(9) p:nth-child(2) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 2.2s;
+}
+
+.current .con2 div:nth-child(9) p:nth-child(3) {
+    transform: translateX(-2000px);
+}
+
+.current .con2 div:nth-child(9) p:nth-child(3) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 2.6s;
+}
+
+.current .con2 div:nth-child(9) p:nth-child(4) {
+    transform: translateX(-2000px);
+}
+
+.current .con2 div:nth-child(9) p:nth-child(4) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 3.0s;
+}
+
+.current .con2 div:nth-child(9) p:nth-child(5) {
+    transform: translateX(-2000px);
+}
+
+.current .con2 div:nth-child(9) p:nth-child(5) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 2.3s;
+}
+
+.current .con2 div:nth-child(9) p:nth-child(6) {
+    transform: translateX(-2000px);
+}
+
+.current .con2 div:nth-child(9) p:nth-child(6) {
+    animation: in1 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-delay: 1.9s;
+}
+
+.con2 div:nth-child(9) p {
+    font: 400 12px/50px "microsoft yahei";
+}
+
+@keyframes in1 {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateX(100px) translateY(30px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes in2 {
+    0% {
+        transform: rotateZ(-20deg);
+    }
+    50% {
+        transform: translateY(30px) translateX(100px) rotateZ(-20deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotateZ(-20deg);
+    }
+}
+
+@keyframes in3 {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes in4 {
+    0% {
+        transform: rotateZ(70deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotateZ(70deg);
+    }
+}
+
+/*第三屏*/
+.con3 {
+    width: 500px;
+    height: 700px;
+    /*background: rgba(0,0,0,0.4);*/
+    margin: 0 auto;
+    position: relative;
+}
+
+.con3 div:nth-child(1) {
+    width: 3px;
+    height: 1px;
+    background: #1D1D1D;
+    position: absolute;
+    left: 60px;
+    transform: translateY(-4000px);
+}
+
+.current .con3 div:nth-child(1) {
+    animation: three 3s ease-in 1, three1 3s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.con3 div:nth-child(2) {
+    width: 77px;
+    height: 67px;
+    background: url(../images/yq0KXFZKeu2AcClSAAAJ-JLoIOg269.png);
+    text-align: center;
+    font: 400 12px/85px "microsoft yahei";
+    color: #ffffff;
+    position: absolute;
+    left: 23px;
+    top: 96px;
+    transform: translateY(-4000px);
+}
+
+.current .con3 div:nth-child(2) {
+    animation: three 3s ease-in 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+
+}
+
+.con3 div:nth-child(3) {
+    width: 3px;
+    height: 100px;
+    background: #1D1D1D;
+    position: absolute;
+    left: 60px;
+    top: 160px;
+    transform: translateY(-4000px);
+}
+
+.current .con3 div:nth-child(3) {
+    animation: three 3s ease-in 1, three1 3s linear 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+
+}
+
+.con3 div:nth-child(4) {
+    width: 77px;
+    height: 67px;
+    background: url(../images/yq0KXFZKeu2AcClSAAAJ-JLoIOg269.png);
+    text-align: center;
+    font: 400 12px/85px "microsoft yahei";
+    color: #ffffff;
+    position: absolute;
+    left: 23px;
+    top: 258px;
+    transform: translateY(-4000px);
+}
+
+.current .con3 div:nth-child(4) {
+    animation: three 3s ease-in 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.4s;
+
+}
+
+.con3 div:nth-child(5) {
+    width: 3px;
+    height: 100px;
+    background: #1D1D1D;
+    position: absolute;
+    left: 60px;
+    top: 320px;
+    transform: translateY(-4000px);
+}
+
+.current .con3 div:nth-child(5) {
+    animation: three 3s ease-in 1, three1 3s linear 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3.2s;
+
+}
+
+.con3 div:nth-child(6) {
+    width: 77px;
+    height: 67px;
+    background: url(../images/yq0KXFZKeu2AcClSAAAJ-JLoIOg269.png);
+    text-align: center;
+    font: 400 12px/85px "microsoft yahei";
+    color: #ffffff;
+    position: absolute;
+    left: 23px;
+    top: 420px;
+    transform: translateY(-4000px);
+}
+
+.current .con3 div:nth-child(6) {
+    animation: three 3s ease-in 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4.0s;
+
+}
+
+.con3 div:nth-child(7) {
+    width: 3px;
+    height: 100px;
+    background: #1D1D1D;
+    position: absolute;
+    left: 60px;
+    top: 480px;
+    transform: translateY(-4000px);
+}
+
+.current .con3 div:nth-child(7) {
+    animation: three 3s ease-in 1, three1 3s linear 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4.8s;
+
+}
+
+.con3 div:nth-child(8) p {
+    width: 380px;
+    height: 67px;
+    text-align: center;
+    font: 400 14px/30px "microsoft yahei";
+    color: #ffffff;
+    position: absolute;
+    left: 110px;
+    top: 100px;
+    transform: translateX(-4000px);
+}
+
+.current .con3 div:nth-child(8) p {
+    animation: three 3s ease-in 1, three2 3s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.con3 div:nth-child(9) p {
+    width: 380px;
+    height: 67px;
+    text-align: center;
+    font: 400 14px/30px "microsoft yahei";
+    color: #ffffff;
+    position: absolute;
+    left: 110px;
+    top: 265px;
+    transform: translateX(-4000px);
+
+}
+
+.current .con3 div:nth-child(9) p {
+    animation: three 3s ease-in 1, three2 3s linear 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+.con3 div:nth-child(10) p {
+    width: 0px;
+    height: 67px;
+    text-align: center;
+    font: 400 14px/30px "microsoft yahei";
+    color: #ffffff;
+    position: absolute;
+    left: 110px;
+    top: 426px;
+    transform: translateX(-4000px);
+
+}
+
+.current .con3 div:nth-child(10) p {
+    animation: three 3s ease-in-out 1, three2 3s linear 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+}
+
+@keyframes three {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(-30px) translateX(0px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes three1 {
+    0% {
+        height: 0;
+    }
+    25% {
+        height: 10px;
+    }
+    50% {
+        height: 30px;
+    }
+    75% {
+        height: 60px;
+    }
+    100% {
+        height: 100px;
+    }
+}
+
+@keyframes three2 {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        width: 380px;
+        height: 67px;
+        transform: translateY(0px) translateX(20px);
+        opacity: 0.5;
+
+    }
+    70% {
+        width: 380px;
+        height: 67px;
+        transform: translateY(0px) translateX(-20px);
+        opacity: 0.8;
+
+    }
+    100% {
+        width: 380px;
+        height: 67px;
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+}
+.section div div:nth-child(2)>img{
+    animation: xuan 6s linear Infinite;
+}
+@keyframes xuan {
+    0% {
+        transform:rotateZ(0deg);
+    }
+    100%{
+        transform:rotateZ(360deg);
+    }
+}
+
+
+
