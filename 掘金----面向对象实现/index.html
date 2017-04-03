@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body,div,img,span,h3,p{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 500px;
+            margin: 100px auto;
+            border: 1px solid #123456;
+        }
+        .box .box-container{
+            width: 100%;
+            height: 100px;
+        }
+        .box .box-container img{
+            width: 100px;
+            height: 100px;
+            background: #000;
+            float: left;
+        }
+        .box .box-container h3,p {
+            display: inline-block;
+        }
+        .box .box-container span{
+            cursor: pointer;
+            color:green;
+        }
+        .box .mot{
+            width: 80px;
+            background: #123456;
+            margin-left: 300px;
+            display:none;
+        }
+        .box .mot p{
+            line-height: 20px;
+            margin-top: 5px;
+            display:block;
+            background: #fff;
+            color:green;
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content:"";
+            line-height: 0;
+            display:none;
+            height: 0;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+
+<script src="./jquery.min.js"></script>
+<script src="./index.js"></script>
+<script>
+    $.get("./data.json",function(data){
+        var s1=new project("body",data);
+    })
+</script>
+</body>
+</html>
