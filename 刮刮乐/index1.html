@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <style>
+        canvas{
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="960" height="600" style="background-image: url(ChMkJlbKwhGIFzaNABRkaCE3DbUAALGiQJ0DzMAFGSA099.jpg)"></canvas>
+</body>
+<script src="jquery.min.js"></script>
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var cw=canvas.width;
+    var ch=canvas.height;
+    ctx.fillStyle="rgb(211,211,211)";
+    ctx.fillRect(0,0,cw,ch);
+    ctx.beginPath();
+    ctx.globalCompositeOperation="destination-out";
+    $("canvas").on("mousedown",function(){
+        $("canvas").on("mousemove",function(e){
+            var x= e.pageX-canvas.offsetLeft;
+            var y= e.pageY-canvas.offsetTop;
+            ctx.beginPath();
+            ctx.arc(x,y,30,0,2*Math.PI);
+            ctx.fill();
+            var data=ctx.getImageData(0,0,cw,ch).data;
+            var number=0;
+            for(var i=0;i<data.length;i+=4){
+                if(data[i+3]==0){
+                    number++;
+                }
+            }
+            console.log(number);
+            if(number>=cw*ch/2){
+                ctx.clearRect(0,0,cw,ch);
+                $("canvas").off("mousemove");
+            }
+        })
+    }).on("mouseup mouseleave",function(){
+        $("canvas").off("mousemove");
+    })
+</script>
+</html>
