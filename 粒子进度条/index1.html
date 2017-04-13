@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #canvas-wrapper-test3 {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div id="canvas-wrapper-test3"></div>
+</body>
+<script>
+    var canvas = document.createElement("canvas");
+    var parent = document.getElementById("canvas-wrapper-test3");
+    canvas.width = 400;
+    canvas.height = 100;
+    canvas.id = "canvas-test3";
+    parent.appendChild(canvas);
+    var ctx = canvas.getContext("2d"),
+            hue = 0,
+            vy = -2,
+            par = [],
+            x = 0,
+            draw = function () {
+                var color;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                x += 3;
+                    hue = (x > 310) ? 0 : hue;
+                    color = "hsla(" + (hue ++) + ",100%,70%,1)";
+                par.push({
+                    px: x + 40,
+                    py: 50,
+                    pvy: vy,
+                    pcolor: "hsla(" + (hue +30) + ",100%,70%,1)"
+                });
+                x = (x > 310) ? 0 : x;
+                ctx.fillStyle = color;
+                ctx.fillRect(45, 40, x, 20);
+                var n = par.length;
+                while (n--) {
+                    par[n].pvy += (Math.random() + 0.1) / 5;
+                    par[n].py += par[n].pvy;
+                    if (par[n].py > canvas.height) {
+                        par.splice(n, 1);
+                        continue;
+                    }
+                    ctx.fillStyle = par[n].pcolor;
+                    ctx.fillRect(par[n].px, par[n].py, 5, 5);
+                }
+                raf = window.requestAnimationFrame(draw);
+            }
+    raf = window.requestAnimationFrame(draw);
+
+</script>
+</html>
