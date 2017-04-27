@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>贪吃蛇</title>
+    <style type="text/css">
+		/*地图基本样式*/
+		.box{ width:870px; margin:100px auto; overflow:hidden;  color:#ccc; text-align:center; line-height:40px;}
+		/*每个小方块地图的样式*/
+    	div div{width:40px; height:40px; border:1px solid #aaa; float:left;  }
+		/*蛇的 每一小格的样式*/
+		.current{ background:red; }
+		/*食物的样式*/
+		.food{background:green;}
+    </style>
+	/*.gun{ width:200px; height:50px; border:1px solid red; margin:0 auto; cursor:pointer; text-align:center; line-height:50px;}*/
+    <script type="text/javascript">
+    	window.onload=function(){
+				var box=document.getElementById('box');
+//				拼接地图的字符串
+				var htmls='';
+//				蛇的原始大小
+				var she=[94,93,92];
+//			蛇移动的默认方向
+				var direction='left';
+//			定时器 用于定时重回页面
+				var timer;
+//			食物在一维数组中的坐标
+				var food=234;
+//			绘制地图，天就到的box中
+				for(var k=0;k<400;k++){
+					htmls+='<div>'+k+'</div>';	
+				}				
+				box.innerHTML=htmls;
+
+				var nun=0;
+
+				//开启定时器
+				 timer=window.setInterval(function(){
+//					 	在滚函数中执行游戏逻辑
+						gun();
+					 },500);
+					 
+					 
+				var maps=box.getElementsByTagName('div'); 
+				//画蛇的方法
+				var Draw=function(){
+//					根据没一个地图没一格的状态，来给每个地图小块，添加或者删除样式
+					for(var i=0; i<maps.length;i++){
+						 maps[i].className='';
+						for(var j=0;j<she.length;j++){
+								if(maps[i].innerHTML==she[j]){
+									 maps[i].className='current';
+								}
+						}
+						//绘制食物
+						if(maps[i].innerHTML==food){
+							maps[i].className='food';
+						}
+					}
+				}
+				
+				Draw();
+				
+				//监听按键事件
+			   window.onkeydown=function(e){
+				   	var dir=e.keyCode;
+//					根据用户的按键操作 上下左右 ，来设置蛇移动的方法
+					switch(dir){
+						case 37: direction='left'; break;
+						case 38: direction='up'; break;
+						case 39: direction='right';break;
+						case 40: direction='down';break;
+					}
+					
+			   };
+
+					//蛇走的方法
+					var gun=function(){
+						//正常走
+					    var num=  she[she.length-1];
+						for(var i=0;i<she.length;i++){
+							she[i]=she[i+1];	
+						}			
+//						根据不同的方式，分别是数据发送不同的变化，左：数据-1  右：数据+1 上：数据-10  下：数据+10
+						switch(direction){
+							case 'left' : she[she.length-1]=num-1; ; break;
+							case 'right': she[she.length-1]=num+1; ; break;
+							case 'down' : she[she.length-1]=num+20; ; break;
+							case 'up'  : she[she.length-1]=num-20; ; break;
+							default: alert("xxx");
+						}
+//						判断是否越界
+						if(she[she.length-1]==0){
+								 she[she.length-1]=399;
+							}
+						
+						//吃食物
+						if(she[she.length-1]==food){
+							//alert('eat！');	
+							var temp;
+							switch(direction){
+								case 'left' : temp=she[she.length-1]-1; ; break;
+								case 'right': temp=she[she.length-1]+1; ; break;
+								case 'down' : temp=she[she.length-1]+20; ; break;
+								case 'up'  :  temp=she[she.length-1]-20; ; break;								
+							}
+							she.push(temp);
+							//随机生成食物
+							food=parseInt(Math.random()*400);	
+
+						}
+					 Draw();
+					 IsOver();
+					};
+
+				  //是否游戏结束
+					var IsOver=function(){
+							for(var i=1; i<she.length; i++){
+								if(she[0]==she[i]){
+									clearInterval(timer);
+//									结束则出现over单词，一下是模拟像素点的坐标
+									she=[161,162,180,200,220,241,242,183,203,223,  165,185,205,225,246,167,187,207,227,169,170,171,189,209,210,211,229,249,250,251, 173,174,175,193,213,214,215,196,233,235,253,256,176,216,178,198,218,258];
+									she.sort();
+//									alert(she);
+									Draw();
+									break;	
+								}
+							
+							}
+						};
+					
+					
+				
+					
+					
+			};
+    </script>
+	<div class="gun" id="gun">滚</div>
+</head>
+    <body>
+    	<div class="box" id="box"></div>
+    </body>
+</html>
+
