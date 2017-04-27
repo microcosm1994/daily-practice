@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        ul {
+            list-style: none
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        .nav {
+            width: 800px;
+            height: 42px;
+            margin: 100px auto;
+            background: url(images/rss.png) right center no-repeat;
+            background-color: #fff;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .nav li {
+            width: 83px;
+            height: 42px;
+            text-align: center;
+            line-height: 42px;
+            float: left;
+            cursor: pointer;
+        }
+
+        .nav span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 83px;
+            height: 42px;
+            background: url(images/cloud.gif) no-repeat;
+        }
+
+        ul {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <span id="cloud"></span>
+    <ul id="navBar">
+        <li>北京校区</li>
+        <li>上海校区</li>
+        <li>广州校区</li>
+        <li>深圳校区</li>
+        <li>武汉校区</li>
+        <li>关于我们</li>
+        <li>联系我们</li>
+        <li>招贤纳士</li>
+    </ul>
+</div>
+<script>
+    var lastPosition = 0;//记录要回到的位置 开始的时候是0
+    var cloud = document.getElementById("cloud");
+    var navBar = document.getElementById("navBar");
+    var lis = navBar.children;//所有的li
+    //鼠标经过当前li 让筋斗云飞到当前li的位置
+    for (var i = 0; i < lis.length; i++) {
+        //经过过来
+        lis[i].onmouseover = function () {
+            //让筋斗云飞到当前li的位置
+            var target = this.offsetLeft;
+            animate(cloud, target);
+        };
+        //离开后还要回去
+        lis[i].onmouseout = function () {
+            animate(cloud, lastPosition);
+        };
+        //点击当前li 记录点击的li的位置 下次回到这里
+        lis[i].onclick = function () {
+            lastPosition = this.offsetLeft;//点击后重新记录位置
+        };
+    }
+
+
+    function animate(obj, target) {
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            var leader = obj.offsetLeft;
+            var step = (target - leader) / 5;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            leader = leader + step;
+            obj.style.left = leader + "px";
+            if (leader === target) {
+                clearInterval(obj.timer);
+            }
+        }, 15);
+    }
+</script>
+</body>
+</html>

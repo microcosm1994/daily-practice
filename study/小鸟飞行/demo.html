@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #demo {
+            width: 52px;
+            height: 45px;
+            background-image: url(birds.png);
+            position: absolute;
+            margin-top:200px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo"></div>
+<input type="button" value="飞行" id="btn"/>
+<input type="button" value="回来" id="btn1"/>
+<script>
+    var demo=document.getElementById("demo");
+    var btn=document.getElementById("btn");
+    var i=0;
+    var timer=setInterval(function(){
+        demo.style.backgroundPositionX=-52*i+"px";
+        i++;
+        if(i===3){
+            i=0;
+        }
+    },100);
+    function animate(obj, target) {
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            var leader = obj.offsetLeft;
+            var step = 10;
+            step = target > leader ? step : -step;
+            if (Math.abs(leader - target) >= Math.abs(step)) {
+                leader = leader + step;
+                obj.style.left = leader + "px";
+            } else {
+                clearInterval(obj.timer);
+                obj.style.left = target + "px";
+            }
+        }, 15);
+    }
+    btn1.onclick=function(){
+       animate(demo,100);
+    }
+   btn.onclick=function(){
+       animate(demo,800);
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 1000px;
+            margin-top: 10px;
+
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="top" id="topPart">
+    <img src="images/top.png" alt=""/>
+</div>
+<div id="navBar">
+    <img src="images/nav.png" alt=""/>
+</div>
+<div class="main" id="mainPart">
+    <img src="images/main.png" alt=""/>
+</div>
+<script src="../common.js"></script>
+<script>
+    //找人
+    var topPart = document.getElementById("topPart");
+    var navBar = document.getElementById("navBar");
+    var mainPart = document.getElementById("mainPart");
+    //窗体滚动的时候 判断页面被卷去的头部的高度 如果 大于顶部部分的高度
+    //此时 就要把 导航栏 变为固定定位
+    window.onscroll = function () {
+        if (scroll().top > topPart.offsetHeight) {
+            navBar.className = "fixed";
+            //1.给主体部分加的高度 = 导航栏的高度
+            //2.一定要记得加单位
+            mainPart.style.paddingTop = navBar.offsetHeight + "px";
+        } else {
+            navBar.className = "";
+            //回来后 还要把 之前加的paddingTop去掉
+            mainPart.style.paddingTop = 0;//0的时候是否加px都可以
+        }
+    };
+
+</script>
+</body>
+</html>

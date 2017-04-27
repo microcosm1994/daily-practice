@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            height: 500px;
+            border: 1px solid red;
+            margin: 100px;
+            position: relative;
+        }
+
+        .content {
+            padding: 5px 18px 5px 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .scroll {
+            width: 18px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #eee;
+        }
+
+        .bar {
+            /*height: 100px;*/
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box">
+    <div class="content" id="content">
+        我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我
+        是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是
+        文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是
+        文字内容我是文字内容我是
+        我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我
+        是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是
+        文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我
+
+        我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我
+        是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是
+        文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我
+        我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我
+        是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是
+        文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我
+        我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我
+        是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是
+        文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我
+        我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我
+        是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是
+        文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我
+        我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我
+        是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是
+        文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我是文字
+        内容我是文字内容我内容我是文字内容我是文字内容我是文字内容我
+    </div>
+    <div class="scroll">
+        <div class="bar" id="bar"></div>
+    </div>
+</div>
+<script>
+    var box = document.getElementById("box");
+    var content = document.getElementById("content");
+    var bar = document.getElementById("bar");
+    if (content.offsetHeight > box.offsetHeight) {
+        bar.style.height = box.offsetHeight / content.offsetHeight * box.offsetHeight + "px";
+    } else {
+        bar.style.display = "none";
+    }
+    //设置溢出隐藏
+    box.style.overflow="hidden";
+    bar.onmousedown = function () {
+        var event = event || window.event;
+        var pageY = event.pageY || event.clientY + document.documentElement.scrollLeft;
+        var barboxY = pageY - bar.offsetTop - box.offsetTop;
+        document.onmousemove = function (event) {
+            var event = event || window.event;
+            var pageY = event.pageY || event.clientY + document.documentElement.scrollLeft;
+            var boxY = pageY - box.offsetTop;
+            var barY = boxY - barboxY;
+            if (barY < 0) {
+                barY = 0;
+            }
+            if (barY > box.offsetHeight - bar.offsetHeight) {
+                barY = box.offsetHeight - bar.offsetHeight;
+            }
+            bar.style.top = barY + "px";
+            window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+            var contentY=content.offsetHeight-box.offsetHeight;
+            var barToMove=box.offsetHeight-bar.offsetHeight;
+            var rate=contentY/barToMove;
+            content.style.top=-rate*barY+"px";
+        }
+    }
+    document.onmouseup = function () {
+        document.onmousemove = null;
+    }
+</script>
+</body>
+</html>

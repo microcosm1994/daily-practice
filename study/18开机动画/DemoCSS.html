@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box {
+            width: 322px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box">
+    <span id="closeButton"></span>
+    <div class="hd" id="headPart">
+        <img src="images/t.jpg" alt=""/>
+    </div>
+    <div class="bd" id="bottomPart">
+        <img src="images/b.jpg" alt=""/>
+    </div>
+</div>
+<script>
+    var box=document.getElementById("bottomPart");
+    var btn=document.getElementById("closeButton");
+    btn.onclick=function(){
+        animate(box,{"height":0},function(){
+            animate(box.parentNode,{"width":0,"opacity":0.5})
+        })
+    }
+    function animate(obj, json,fn) {
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            var flag = true;
+            for (var k in json) {
+                if(k==="opacity"){
+                    var leader = getStyle(obj, k)*100;
+                    var target = json[k]*100;
+                    var step = (target - leader) / 10;
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                    leader = leader + step;
+                    obj.style[k] = leader /100;
+                    } else if(k==="zIindex"){
+                    obj.style.zIndex=json[k];
+                }else{
+                    var leader = parseInt(getStyle(obj, k)) || 0;
+                    var target = json[k];
+                    var step = (target - leader) / 10;
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                    leader = leader + step;
+                    obj.style[k] = leader + "px";
+                    if (leader !== target) {
+                        flag = false;
+                    }
+                }
+            }
+            if (flag) {
+                clearInterval(obj.timer);
+                if(fn){
+                    fn();
+                }
+            }
+        }, 15);
+    }
+    function getStyle(obj, attr) {
+        if (window.getComputedStyle) {
+            return window.getComputedStyle(obj)[attr];
+        } else {
+            return obj.currentStyle[attr];
+        }
+    }
+</script>
+</body>
+</html>

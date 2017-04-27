@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            float: left;
+            border: 2px solid #999999;
+            width: 400px;
+            height: 400px;
+            margin-left: 30px;
+        }
+
+        input {
+            margin-top: 390px;
+            margin: 0 auto;
+        }
+
+        #a {
+            background: url(thumb_201607201156159097.jpg);
+        }
+
+        #b {
+            background: url(thumb_201607201156168472.jpg);
+        }
+
+        #c {
+            background: url(thumb_201607201156178473.jpg);
+        }
+    </style>
+</head>
+<body>
+<div id="a"><input type="button" id="btn1" value=">>"/></div>
+<div id="b"><input type="button" id="btn2" value="<<"/>
+    <input type="button" id="btn3" value=">>"/></div>
+<div id="c"><input type="button" id="btn4" value="<<"/></div>
+
+<script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var btn4 = document.getElementById("btn4");
+    var a = document.getElementById("a");
+    var b = document.getElementById("b");
+    var c = document.getElementById("c");
+    var bpic = "url(thumb_201607201156168472.jpg)";
+    var apic = "url(thumb_201607201156159097.jpg)";
+    var cpic = "url(thumb_201607201156178473.jpg)";
+    var num = 0;
+    btn1.onclick = function () {
+        if (b.style.background == cpic) {
+            a.style.background = cpic;
+            b.style.background = apic;
+            c.style.background = bpic;
+        } else {
+            if (num === 0) {
+                a.style.background = bpic;
+                b.style.background = apic;
+                c.style.background = cpic;
+                num++;
+            } else {
+                num = 0;
+                a.style.background = apic;
+                b.style.background = bpic;
+                c.style.background = cpic;
+            }
+        }
+    }
+    btn2.onclick = function () {
+        if (b.style.background ==cpic) {
+            a.style.background = cpic;
+            b.style.background = apic;
+            c.style.background=bpic;
+        } else {
+
+            if (num === 0) {
+                a.style.background = bpic;
+                b.style.background = apic;
+                c.style.background=cpic;
+                num++;
+            } else {
+                num = 0;
+                a.style.background = apic;
+                b.style.background = bpic;
+                c.style.background=cpic;
+            }
+        }
+
+    }
+    btn3.onclick = function () {
+        if (b.style.background == cpic) {
+            a.style.background = apic;
+            b.style.background = bpic;
+            c.style.background = cpic;
+        } else {
+            if (num === 0) {
+                b.style.background = cpic;
+                c.style.background = bpic;
+                a.style.background = apic;
+                num++;
+            } else {
+                num = 0;
+                b.style.background = bpic;
+                c.style.background = cpic;
+                a.style.background = apic;
+            }
+        }
+    }
+    btn4.onclick = function () {
+        if (b.style.background == cpic) {
+            a.style.background = apic;
+            b.style.background = bpic;
+            c.style.background = cpic;
+        } else {
+            if (num === 0) {
+                b.style.background = cpic;
+                c.style.background = bpic;
+                a.style.background = apic;
+                num++;
+            } else {
+                num = 0;
+                b.style.background = bpic;
+                c.style.background = cpic;
+                a.style.background = apic;
+            }
+        }
+    }
+</script>
+</body>
+</html>

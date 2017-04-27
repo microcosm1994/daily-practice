@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .parentWrap {
+            width: 200px;
+            text-align: center;
+        }
+
+        .parentWrap > li {
+            border: 1px solid #999;
+            background-color: #e0ecff;
+        }
+
+        .groupTitle {
+            display: block;
+            height: 20px;
+            line-height: 20px;
+            font-size: 16px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .parentWrap ul {
+            background-color: #fff;
+            display: none;
+        }
+
+        .friends > li {
+            background: white;
+            height: 28px;
+            line-height: 28px;
+            border-bottom: 1px solid #999;
+            cursor: default;
+        }
+    </style>
+    <script src="../../JS文件/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            $("span").click(function(){
+                var dis=$(this).next().css("display");
+                if(dis==="block"){
+                    $(this).parent().siblings().children("ul").hide();
+                    $(this).next().hide();
+                }else{
+                    $(this).next().show();
+                    $(this).parent().siblings().children("ul").hide();
+                }
+
+
+
+            })
+
+        })
+    </script>
+</head>
+<body>
+<ul class="parentWrap">
+    <li>
+        <span class="groupTitle">我的好友</span>
+        <ul class="friends">
+            <li>小1 - 好友</li>
+            <li>小2 - 好友</li>
+            <li>小3 - 好友</li>
+            <li>小4 - 好友</li>
+            <li>小5 - 好友</li>
+        </ul>
+    </li>
+    <li>
+        <span class="groupTitle">土豪们</span>
+        <ul class="friends">
+            <li>小1 - 好友</li>
+            <li>小2 - 好友</li>
+            <li>小3 - 好友</li>
+            <li>小4 - 好友</li>
+            <li>小5 - 好友</li>
+        </ul>
+    </li>
+    <li>
+        <span class="groupTitle">程序猿</span>
+        <ul class="friends">
+            <li>小1 - 好友</li>
+            <li>小2 - 好友</li>
+            <li>小3 - 好友</li>
+            <li>小4 - 好友</li>
+            <li>小5 - 好友</li>
+        </ul>
+    </li>
+    <li>
+        <span class="groupTitle">美工妹子</span>
+        <ul class="friends">
+            <li>小1 - 好友</li>
+            <li>小2 - 好友</li>
+            <li>小3 - 好友</li>
+            <li>小4 - 好友</li>
+            <li>小5 - 好友</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

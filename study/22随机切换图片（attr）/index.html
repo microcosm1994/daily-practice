@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>随机切换图片案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        input[type="button"] {
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+        }
+
+        div {
+            width: 500px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        div img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script src="../jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+           $("#imgMax").attr("src","imgs/0.jpg");
+            $("#btnChangeImg").click(function(){
+                var radom=parseInt(Math.random()*6);
+                $("#imgMax").attr("src","imgs/"+radom+".jpg");
+            })
+        })
+    </script>
+</head>
+<body>
+<div>
+    <input type="button" value="随机换一张" id="btnChangeImg">
+    <img src="" alt="" id="imgMax"/>
+</div>
+</body>
+</html>
