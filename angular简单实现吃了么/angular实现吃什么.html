@@ -173,7 +173,8 @@ var data1,geohash;
                 method:"get"
             }).success(function(data){
                 //把传回来的数据添加到$scope中，方便使用
-                    $scope.position=data;
+                console.log(data);
+                $scope.position=data;
             })
         }
         $scope.getday=function(item){
