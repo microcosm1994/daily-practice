@@ -15,7 +15,7 @@
     overflow:hidden;
     .header-position-text{
       height: 4rem;
-      font-size:4rem;
+      font-size:2rem;
       color:@white;
       float:left;
       p{
@@ -118,25 +118,33 @@
 //商品列表样式
 .e-commodity{
   width: 100%;
-  padding-bottom:10rem;
+  padding-bottom:5rem;
   .commodity{
     width: 100%;
     height: 10rem;
     background: green;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
     .commodity-img{
       width: 30%;
       height: 10rem;
       background: yellow;
+      float: left;
+      img{
+        display:inline-block;
+      }
     }
     .commodity-info{
+      float: left;
       h3{
         font-size:1.4rem;
         line-height: 1.4rem;
+        display:inline-block;
       }
       p{
         font-size:1.2rem;
         line-height: 1.2rem;
+        display:inline-block;
       }
     }
   }
@@ -149,6 +157,7 @@
   bottom:0;
   border-top:0.5rem solid #F4F4F4;
   background: @white;
+  padding-bottom:1rem;
   ul{
     overflow: hidden;
     margin-left:-4rem;
