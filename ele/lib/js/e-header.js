@@ -5,6 +5,7 @@ $(function(){
     $.ajax({
         url:"http://jklib.org/ele/cities.ashx",
         type:"get",
+        cache:false,
         data:{},
         datatype:"jsonp",
         success:function(info){
