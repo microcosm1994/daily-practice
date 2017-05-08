@@ -1,4 +1,4 @@
-@import "./base.less";
+@import "./base";
 .e-header {
   width: 100%;
   padding-left: 4rem;

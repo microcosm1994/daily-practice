@@ -23,64 +23,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.44244984">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
+          <file leaf-file-name="angular实现吃什么.html" pinned="false" current-in-tab="true">
+            <entry file="file://$USER_HOME$/github/angular简单实现吃了么/angular实现吃什么.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.2777778">
-                  <caret line="12" column="0" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="87" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="e-neck.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/js/e-neck.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-                  <folding>
-                    <marker date="1494151994639" expanded="true" signature="67:1317" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="104:1235" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="143:662" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="164:643" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="701:1220" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="722:1201" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="e-header.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/js/e-header.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.0011628">
-                  <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
-                  <folding>
-                    <marker date="1494171289736" expanded="true" signature="4309:4368" placeholder="..." />
-                    <marker date="1494171289736" expanded="true" signature="4738:5118" placeholder="..." />
-                    <marker date="1494171289736" expanded="true" signature="4774:4828" placeholder="..." />
-                    <marker date="1494171289736" expanded="true" signature="4865:4984" placeholder="..." />
-                    <marker date="1494171289736" expanded="true" signature="4998:5107" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="angular实现吃什么.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../angular简单实现吃了么/angular实现吃什么.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
+                <state vertical-scroll-proportion="3.413835">
                   <caret line="132" column="31" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/js/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -90,46 +37,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="e-header.less" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/css/e-header.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6686893">
-                  <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="e-commodity.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/js/e-commodity.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-                  <folding>
-                    <marker date="1494151951525" expanded="true" signature="277:596" placeholder="..." />
-                    <marker date="1494151951525" expanded="true" signature="291:339" placeholder="..." />
-                    <marker date="1494151951525" expanded="true" signature="353:470" placeholder="..." />
-                    <marker date="1494151951525" expanded="true" signature="484:585" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="01-template.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="01-template.html" pinned="false" current-in-tab="true">
             <entry file="file://D:/前端课程/前端课程/前端开发/AJAX/ajax第四天+预习/ajax第四天/4-源代码/03-template/01-template.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="base.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/css/base.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -151,17 +63,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/index.html" />
-        <option value="$PROJECT_DIR$/.idea/index.html" />
-        <option value="$PROJECT_DIR$/lib/css/base.css" />
-        <option value="$PROJECT_DIR$/lib/css/base.less" />
-        <option value="$PROJECT_DIR$/lib/js/e-commodity.js" />
-        <option value="$PROJECT_DIR$/lib/js/e-neck.js" />
-        <option value="$PROJECT_DIR$/lib/js/index.js" />
-        <option value="$PROJECT_DIR$/../angular简单实现吃了么/angular实现吃什么.html" />
-        <option value="$PROJECT_DIR$/lib/js/e-header.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/lib/css/e-header.less" />
+        <option value="$USER_HOME$/github/新建文件夹/lib/index.html" />
+        <option value="$USER_HOME$/github/新建文件夹/.idea/index.html" />
+        <option value="$USER_HOME$/github/新建文件夹/lib/css/base.css" />
+        <option value="$USER_HOME$/github/新建文件夹/lib/css/base.less" />
+        <option value="$USER_HOME$/github/新建文件夹/lib/js/e-commodity.js" />
+        <option value="$USER_HOME$/github/新建文件夹/lib/js/e-neck.js" />
+        <option value="$USER_HOME$/github/新建文件夹/lib/js/index.js" />
+        <option value="$USER_HOME$/github/angular简单实现吃了么/angular实现吃什么.html" />
+        <option value="$USER_HOME$/github/新建文件夹/lib/css/e-header.less" />
+        <option value="$USER_HOME$/github/新建文件夹/index.html" />
+        <option value="$USER_HOME$/github/新建文件夹/lib/js/e-header.js" />
       </list>
     </option>
   </component>
@@ -214,7 +126,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/github/ele" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -317,197 +229,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
-          <folding>
-            <marker date="1494171289736" expanded="true" signature="4309:4368" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4738:5118" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4774:4828" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4865:4984" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4998:5107" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../angular简单实现吃了么/angular实现吃什么.html">
+    <entry file="file://$USER_HOME$/github/angular简单实现吃了么/angular实现吃什么.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="132" column="31" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/css/e-header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-neck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding>
-            <marker date="1494151994639" expanded="true" signature="67:1317" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="104:1235" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="143:662" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="164:643" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="701:1220" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="722:1201" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-commodity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding>
-            <marker date="1494151951525" expanded="true" signature="277:596" placeholder="..." />
-            <marker date="1494151951525" expanded="true" signature="291:339" placeholder="..." />
-            <marker date="1494151951525" expanded="true" signature="353:470" placeholder="..." />
-            <marker date="1494151951525" expanded="true" signature="484:585" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/前端课程/前端课程/前端开发/AJAX/ajax第四天+预习/ajax第四天/4-源代码/03-template/01-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/css/base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
-          <folding>
-            <marker date="1494171289736" expanded="true" signature="4309:4368" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4738:5118" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4774:4828" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4865:4984" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4998:5107" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../angular简单实现吃了么/angular实现吃什么.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="31" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/css/e-header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-neck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding>
-            <marker date="1494151994639" expanded="true" signature="67:1317" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="104:1235" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="143:662" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="164:643" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="701:1220" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="722:1201" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-commodity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding>
-            <marker date="1494151951525" expanded="true" signature="277:596" placeholder="..." />
-            <marker date="1494151951525" expanded="true" signature="291:339" placeholder="..." />
-            <marker date="1494151951525" expanded="true" signature="353:470" placeholder="..." />
-            <marker date="1494151951525" expanded="true" signature="484:585" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/前端课程/前端课程/前端开发/AJAX/ajax第四天+预习/ajax第四天/4-源代码/03-template/01-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/css/base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25092706">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/css/base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -520,7 +245,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../angular简单实现吃了么/angular实现吃什么.html">
+    <entry file="file://$USER_HOME$/github/angular简单实现吃了么/angular实现吃什么.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="132" column="31" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="31" />
@@ -528,28 +253,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-commodity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding>
-            <marker date="1494151951525" expanded="true" signature="277:596" placeholder="..." />
-            <marker date="1494151951525" expanded="true" signature="291:339" placeholder="..." />
-            <marker date="1494151951525" expanded="true" signature="353:470" placeholder="..." />
-            <marker date="1494151951525" expanded="true" signature="484:585" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../粒子进度条/index1.html">
+    <entry file="file://D:/前端课程/前端课程/前端开发/AJAX/ajax第四天+预习/ajax第四天/4-源代码/03-template/01-template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -557,47 +261,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$USER_HOME$/github/angular简单实现吃了么/angular实现吃什么.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2777778">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="87" />
+        <state vertical-scroll-proportion="3.413835">
+          <caret line="132" column="31" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-neck.js">
+    <entry file="file://$USER_HOME$/github/粒子进度条/index1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding>
-            <marker date="1494151994639" expanded="true" signature="67:1317" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="104:1235" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="143:662" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="164:643" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="701:1220" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="722:1201" placeholder="..." />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-header.js">
+    <entry file="file://D:/前端课程/前端课程/前端开发/AJAX/ajax第四天+预习/ajax第四天/4-源代码/03-template/01-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0011628">
-          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
-          <folding>
-            <marker date="1494171289736" expanded="true" signature="4309:4368" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4738:5118" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4774:4828" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4865:4984" placeholder="..." />
-            <marker date="1494171289736" expanded="true" signature="4998:5107" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/css/e-header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6686893">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
