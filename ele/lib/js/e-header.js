@@ -79,7 +79,7 @@ city.prototype={
                 url:'http://jklib.org/ele/restaurants.ashx?geohash=' + self.item.geohash + '&longitude=' + self.item.longitude + '&latitude=' + self.item.latitude,
                 type:"get",
                 data:{},
-                datatype:"json",
+                datatype:"jsonp",
                 success:function(info){
                     for(var i=0;i<info.length;i++){
                         var src=info[i].image_path;
