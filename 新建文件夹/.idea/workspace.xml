@@ -26,9 +26,26 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.1407767">
-                  <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+                <state vertical-scroll-proportion="-1.2524272">
+                  <caret line="12" column="0" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="87" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="e-neck.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/js/e-neck.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+                  <folding>
+                    <marker date="1494151994639" expanded="true" signature="67:1317" placeholder="..." />
+                    <marker date="1494151994639" expanded="true" signature="104:1235" placeholder="..." />
+                    <marker date="1494151994639" expanded="true" signature="143:662" placeholder="..." />
+                    <marker date="1494151994639" expanded="true" signature="164:643" placeholder="..." />
+                    <marker date="1494151994639" expanded="true" signature="701:1220" placeholder="..." />
+                    <marker date="1494151994639" expanded="true" signature="722:1201" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -76,26 +93,9 @@
           <file leaf-file-name="e-header.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/css/e-header.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="4.680825">
-                  <caret line="133" column="26" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
+                <state vertical-scroll-proportion="0.77427185">
+                  <caret line="175" column="25" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="e-neck.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/js/e-neck.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-                  <folding>
-                    <marker date="1494151994639" expanded="true" signature="67:1317" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="104:1235" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="143:662" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="164:643" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="701:1220" placeholder="..." />
-                    <marker date="1494151994639" expanded="true" signature="722:1201" placeholder="..." />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -159,9 +159,9 @@
         <option value="$PROJECT_DIR$/lib/js/e-neck.js" />
         <option value="$PROJECT_DIR$/lib/js/index.js" />
         <option value="$PROJECT_DIR$/../angular简单实现吃了么/angular实现吃什么.html" />
-        <option value="$PROJECT_DIR$/lib/css/e-header.less" />
         <option value="$PROJECT_DIR$/lib/js/e-header.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/lib/css/e-header.less" />
       </list>
     </option>
   </component>
@@ -195,7 +195,7 @@
     <ConfirmationsSetting value="0" id="移除" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -206,80 +206,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="新建文件夹" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="新建文件夹" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="新建文件夹" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="新建文件夹" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="新建文件夹" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="新建文件夹" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="新建文件夹" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="新建文件夹" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="新建文件夹" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="options.lastSelected" value="configurable.group.appearance" />
@@ -593,21 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/js/e-neck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding>
-            <marker date="1494151994639" expanded="true" signature="67:1317" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="104:1235" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="143:662" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="164:643" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="701:1220" placeholder="..." />
-            <marker date="1494151994639" expanded="true" signature="722:1201" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../angular简单实现吃了么/angular实现吃什么.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -629,19 +541,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/css/e-header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.680825">
-          <caret line="133" column="26" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../粒子进度条/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/js/e-neck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding>
+            <marker date="1494151994639" expanded="true" signature="67:1317" placeholder="..." />
+            <marker date="1494151994639" expanded="true" signature="104:1235" placeholder="..." />
+            <marker date="1494151994639" expanded="true" signature="143:662" placeholder="..." />
+            <marker date="1494151994639" expanded="true" signature="164:643" placeholder="..." />
+            <marker date="1494151994639" expanded="true" signature="701:1220" placeholder="..." />
+            <marker date="1494151994639" expanded="true" signature="722:1201" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -659,18 +586,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../粒子进度条/index1.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.2524272">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/lib/css/e-header.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1407767">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.77427185">
+          <caret line="175" column="25" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -12,34 +12,34 @@
   overflow: hidden;
 }
 .e-header .header-position .header-position-text {
-  height: 8rem;
+  height: 4rem;
   font-size: 4rem;
   color: #fff;
   float: left;
 }
 .e-header .header-position .header-position-text p {
-  width: 30rem;
+  width: 10rem;
   height: 4rem;
-  line-height: 8rem;
+  line-height: 4rem;
 }
 .e-header .header-position .header-city {
   float: left;
-  height: 8rem;
-}
-.e-header .header-position .header-city select {
-  margin-top: 2rem;
-  width: 5rem;
   height: 4rem;
 }
+.e-header .header-position .header-city select {
+  width: 5rem;
+  height: 3rem;
+  margin-left: 2rem;
+}
 .e-header .header-search {
-  height: 7rem;
+  height: 4rem;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .e-header .header-search input {
   width: 100%;
-  height: 7rem;
-  font-size: 2.5rem;
+  height: 4rem;
+  font-size: 1.4rem;
   border-radius: 2rem;
   padding-left: 2rem;
   border: none;
@@ -50,17 +50,17 @@
   background: #fff;
 }
 .e-header .header-search .header-search-div ul li {
-  font-size: 3rem;
+  font-size: 1.4rem;
   display: block;
   width: 100%;
-  height: 3rem;
-  line-height: 3rem;
+  height: 2rem;
+  line-height: 2rem;
   margin-top: 0.5rem;
 }
 .e-header .header-menu {
-  height: 5rem;
+  height: 2rem;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .e-header .header-menu ul {
   overflow: hidden;
@@ -70,24 +70,25 @@
   float: left;
   width: 20%;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.4rem;
 }
 .e-neck {
   width: 100%;
-  border-bottom: 3rem solid #F4F4F4;
+  border-bottom: 2rem solid #F4F4F4;
 }
 .e-neck .swiper-container {
   width: 100%;
-  height: 30rem;
+  padding-bottom: 2rem;
 }
 .e-neck .swiper-container .swiper-wrapper .swiper-slide ul {
   overflow: hidden;
+  margin-left: -1rem;
 }
 .e-neck .swiper-container .swiper-wrapper .swiper-slide ul li {
   width: 20%;
-  height: 10rem;
+  height: 5rem;
   background: red;
-  margin: 1rem;
+  margin: 0.5rem;
   float: left;
 }
 .e-neck .swiper-container .swiper-wrapper .swiper-slide ul li img {
@@ -98,7 +99,7 @@
   display: block;
   width: 100%;
   background: yellow;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .e-commodity {
   width: 100%;
@@ -106,29 +107,29 @@
 }
 .e-commodity .commodity {
   width: 100%;
-  height: 20rem;
+  height: 10rem;
   background: green;
   margin-top: 2rem;
 }
 .e-commodity .commodity .commodity-img {
-  width: 20rem;
-  height: 20rem;
+  width: 30%;
+  height: 10rem;
   background: yellow;
 }
 .e-commodity .commodity .commodity-info h3 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
 }
 .e-commodity .commodity .commodity-info p {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 .e-foot {
   width: 100%;
-  height: 10rem;
+  height: 5rem;
   position: fixed;
   bottom: 0;
-  border-top: 0.5rem solid #666;
+  border-top: 0.5rem solid #F4F4F4;
   background: #fff;
 }
 .e-foot ul {
@@ -139,21 +140,21 @@
   float: left;
   display: inline-block;
   width: 25%;
-  height: 10rem;
+  height: 5rem;
   text-align: center;
   box-sizing: border-box;
   padding: 0 2rem;
 }
 .e-foot ul li i {
   display: block;
-  height: 5rem;
+  height: 2.5rem;
   width: 10rem;
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
 }
 .e-foot ul li span {
-  height: 5rem;
+  height: 2.5rem;
   width: 10rem;
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
 }
