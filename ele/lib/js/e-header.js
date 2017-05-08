@@ -43,6 +43,7 @@ city.prototype={
         this.bidvdeventsLi($(".header-search-div"));
         console.log(this.optionValue);
         console.log(this.optionposition);
+
     },
     renderselect1:function(v,num){
         //动态创建结构
