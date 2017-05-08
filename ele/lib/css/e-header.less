@@ -1,0 +1,189 @@
+@import"./base.less";
+@bg-color:#0096FF;
+@white:#fff;
+//头部样式
+.e-header{
+  width:100%;
+  padding-left:4rem;
+  padding-right:4rem;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  box-sizing:border-box;
+  background: @bg-color;
+  //头部定位
+  .header-position{
+    overflow:hidden;
+    .header-position-text{
+      height: 4rem;
+      font-size:2rem;
+      color:@white;
+      float:left;
+      p{
+        width: 10rem;
+        height: 4rem;
+        line-height: 4rem;
+      }
+    }
+    .header-city{
+      float:left;
+      height: 4rem;
+      select{
+        width: 5rem;
+        height: 3rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+  //头部搜索框
+  .header-search{
+    height: 4rem;
+    width: 100%;
+    margin-top: 1rem;
+    input {
+      width: 100%;
+      height: 4rem;
+      font-size:1.4rem;
+      border-radius:2rem;
+      padding-left:2rem;
+      border: none;
+      color:#666;
+    }
+    .header-search-div{
+      width: 100%;
+      background: @white;
+
+      ul{
+        li{
+          font-size:1.4rem;
+          display:block;
+          width: 100%;
+          height: 2rem;
+          line-height: 2rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+  //头部小菜单
+  .header-menu{
+    height: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    ul{
+      overflow: hidden;
+      li{
+        display:inline-block;
+        float:left;
+        width: 20%;
+        color:@white;
+        font-size:1.4rem;
+      }
+    }
+  }
+}
+//颈部样式
+.e-neck{
+  width: 100%;
+  border-bottom:2rem solid #F4F4F4;
+  .swiper-container {
+    width: 100%;
+    padding-bottom:2rem;
+    .swiper-wrapper{
+      .swiper-slide{
+        ul{
+          overflow:hidden;
+          margin-left: -1rem;
+          li{
+            width: 20%;
+            height: 5rem;
+            background: red;
+            margin: 0.5rem;
+            float:left;
+            img{
+              width: 100%;
+              background: blue;
+            }
+            p{
+              display:block;
+              width: 100%;
+              background: yellow;
+              font-size:1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//商品列表样式
+.e-commodity{
+  width: 100%;
+  padding-bottom:5rem;
+  .commodity{
+    width: 100%;
+    height: 10rem;
+    background: green;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    .commodity-img{
+      width: 30%;
+      height: 10rem;
+      background: yellow;
+      float: left;
+      img{
+        display:inline-block;
+      }
+    }
+    .commodity-info{
+      float: left;
+      h3{
+        font-size:1.4rem;
+        line-height: 1.4rem;
+        display:inline-block;
+      }
+      p{
+        font-size:1.2rem;
+        line-height: 1.2rem;
+        display:inline-block;
+      }
+    }
+  }
+}
+//尾部样式
+.e-foot{
+  width: 100%;
+  height: 5rem;
+  position:fixed;
+  bottom:0;
+  border-top:0.5rem solid #F4F4F4;
+  background: @white;
+  padding-bottom:1rem;
+  ul{
+    overflow: hidden;
+    margin-left:-4rem;
+    li{
+      float:left;
+      display:inline-block;
+      width: 25%;
+      height:5rem;
+      text-align: center;
+      box-sizing:border-box;
+      padding:0 2rem;
+      //按钮图标
+        i{
+          display:block;
+          height: 2.5rem;
+          width: 10rem;
+          font-size:1.4rem;
+          line-height: 2.5rem;
+        }
+      //字
+        span{
+          height: 2.5rem;
+          width: 10rem;
+          font-size:1.4rem;
+          line-height: 2.5rem;
+      }
+    }
+  }
+}
