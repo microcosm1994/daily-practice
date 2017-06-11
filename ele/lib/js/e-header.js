@@ -1,6 +1,7 @@
 $(function(){
     //创建一个空数组，后边用来接收城市首字母
-    var citysLetter=[],data1,geohash;;
+    var citysLetter=[],data1,geohash,op;
+
 
     $.ajax({
         url:"http://jklib.org/ele/cities.ashx",
@@ -58,7 +59,7 @@ city.prototype={
     bidvdevents:function(e){
         var self=this;
         $(e).change(function(){
-          var op=$(e).val();
+          op=$(e).val();
             console.log(op);
             self.bidvdevents2(op);
         })
@@ -93,6 +94,7 @@ city.prototype={
                 }
             });
             $(".header-search-div").hide();
+
         })
     },
     optionValue:[],
